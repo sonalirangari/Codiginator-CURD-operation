@@ -1,0 +1,133 @@
+body {
+	margin: 0px;
+}
+
+.container {
+	width: auto; 
+	height: 100%; 
+	position: relative;
+}
+
+.header {
+	width: 100%; 
+	height: 75px; 
+	background-color: #49CCEC;
+	float: left;
+	display: inline-block;
+	position: absolute;
+	z-index: 2;
+}
+
+.logo {
+	height: 100%;
+	width: 300px;
+	text-align: center;
+	float: left;
+	margin-right: 5px;
+	/*border: 1px solid #000000;*/
+	/*padding: 10px;*/
+}
+
+.logo img{
+	/*margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: -40px;*/
+	/*margin: 20px;*/
+	/*margin: -12px 0px 0px 40px;*/
+	margin: -10px 30px 20px;
+	text-align: center;
+}
+
+.top-navbar {
+	height: 100%;
+	width: 1000px;
+	/*border: 1px solid #ff0000;*/
+	float: right;
+}
+
+.top-navbar ul {
+ 	list-style: none;
+ 	display: inline;
+ }
+.top-navbar ul li{
+	display: inline;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 3.4em;
+	margin: 0px 8px;
+}
+
+.top-navbar ul li a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.section {
+	width: 100%; 
+	height: auto;
+	position: absolute;
+	margin-top: 75px;
+	z-index: 1;
+	background-image: url('../images/flower.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	width: 100%; 
+	height: auto;
+	/*position: absolute;
+	margin-top: 75px;
+	z-index: 1;*/
+}
+
+.about h1 {
+	text-align: center;
+}
+
+.about .body {
+	width: 97%;
+	height: auto;
+	margin: 15px;
+	text-align: justify;
+}
+
+.history {
+	width: 100%; 
+	height: auto;
+	/*position: absolute;
+	margin-top: 350px;
+	z-index: 1;*/
+}
+
+.history h1 {
+	text-align: center;
+}
+
+.history .body {
+	width: 97%;
+	height: auto;
+	margin: 15px;
+	text-align: justify;
+}
+
+.celebration {
+	width: 100%; 
+	height: auto;
+	/*position: absolute;
+	margin-top: 800px;
+	z-index: 1;*/
+}
+
+.celebration h1 {
+	text-align: center;
+}
+
+.celebration .body {
+	width: 97%;
+	height: auto;
+	margin: 15px;
+	text-align: justify;
+}

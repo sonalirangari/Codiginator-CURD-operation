@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form View</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="C:\Users\Admin\Desktop\htmltutorial\css\forms.css">
+		<script type="text/javascript" src="..	/js/form.js"></script>
+	</head>
+	<body>
+		<div style="width: 100%;">
+			<section style="margin: auto; width: 50%; padding: 10px;">
+				<div class="form-div">
+					<form class="myform" method="post">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<label>First Name</label>
+									</td>
+									<td>
+										<input type="text" name="fname" id="fname" class="name" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Last Name</label>
+									</td>
+									<td>
+										<input type="text" name="lname" id="lname" class="name" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Contact/Mobile No.</label>
+									</td>
+									<td>
+										<input type="text" name="mobile" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Email Id.</label>
+									</td>
+									<td>
+										<input type="email" name="email" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Gender</label>
+									</td>
+									<td>
+										<div class="control-group">
+	    									<label class="control control-radio">
+	    										Male
+												<input type="radio" name="gender" value="M" checked="" />
+												<div class="control_indicator"></div>
+											</label>
+											<label class="control control-radio">
+												Female
+												<input type="radio" name="gender" value="F" />
+												<div class="control_indicator"></div>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Address</label>
+									</td>
+									<td>
+										<textarea rows="2" cols="50" name="address"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>City</label>
+									</td>
+									<td>
+										<input type="text" name="city" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>State</label>
+									</td>
+									<td id="state-td">
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>Hobbies</label>
+									</td>
+									<td>
+										<input type="checkbox" name="hobbies" checked="" />Reading Books
+										<br/>
+										<input type="checkbox" name="hobbies" />Watching TV
+										<br/>
+										<input type="checkbox" name="hobbies" />Gardening
+										<br/>
+										<input type="checkbox" name="hobbies" />Collecting Stamps
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button class="btn btn-success" type="submit" name="submit">SUBMIT</button>
+						<!-- <input type="submit" name="submit" value="SUBMIT"> -->
+						<input class="btn btn-warning" type="reset" name="reset" value="RESET">
+						<input class="btn btn-primary" type="button" name="clickjs" id="clickjs" value="CLICK">
+						<input class="btn btn-info" type="button" name="click" value="CLICK" onclick="myfunction()">
+						<button class="btn btn-primary" type="button" name="clickme" onclick="datafunction()">CLICK</button>
+					</form>
+				</div>
+			</section>
+			<!-- <section style="border: 2px solid #E1A418; margin: auto; width: 50%; padding: 10px;">
+				<a href="https://flipkart.com"> Click to redirect on FLIPKART</a> 
+				<br/><br/>
+				<a href="tables.html"> Click to redirect on TABLE VIEW</a> 
+			</section> -->
+		</div>
+
+		<script type="text/javascript" src="C:\Users\Admin\Desktop\htmltutorial\jquery\jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			function myfunction() {
+				// alert('Hello');
+				// console.log("aksaljkdadak sjadadkashdksa");
+				// document.write('Hello');
+				// window.location.href = 'tables.html';
+
+				var a = 15;
+				var b = 10.2;
+				var s = "Hello World.";
+				var c = 'A';
+				var d = '15.8';
+
+				/****** ALERT MESSAGE POPUP *****/
+				// alert(a+ parseFloat(d));
+				// alert(a+ parseInt(d));
+
+				/***** IF ELSE CONDITION *****/
+				// if(a < b) {
+				// 	alert(a+b);
+				// } else {
+				// 	alert(a+ parseInt(d));
+				// }
+
+				/***** LOOPS *****/
+				// for (var i = 0; i < 10; i++) {
+				// 	console.log(i);
+				// }
+
+				// var i = 0;
+				// while ( i < 10) {
+				// 	console.log(i);
+				// 	i++;
+				// }
+
+				/***** ARRAYS *****/
+				/*** Method 1 ***/
+				// var array = ["Apple", "Mango", "Banana", "Papaya", "Pineapple", "Guava", "Grapes"]
+
+				/*** Method 2 ***/
+				// var array = [];
+				// array[0] = "Apple";
+				// array[1] = "Mango";
+				// array[2] = "Banana";
+				// array[3] = "Papaya";
+				// array[4] = "Pineapple";
+
+				/*** Method 3 ***/
+				// var array = new Array("Apple", "Mango", "Banana", "Papaya", "Pineapple", "Guava", "Grapes");
+
+				/*** Method 4 ***/
+				var array = new Array();
+				array[0] = "Apple";
+				array[1] = "Mango";
+				array[2] = "Banana";
+				array[3] = "Papaya";
+				array[4] = "Pineapple";
+
+				var array2 = new Array();
+				array2[0] = "Lotus";
+				array2[1] = "Rose";
+				array2[2] = "Lily";
+				array2[3] = "Jasmine";
+				array2[4] = "Lavender";
+
+				// console.log(array);
+				// for (var i = 0; i < array.length; i++) {
+				// 	console.log(array[i]);
+				// }
+
+				// console.log(array.reverse());
+				// console.log(array.sort());
+
+				array.push("Lotus");
+				array.push(array2);
+				console.log(array);
+
+			}
+
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(event) {
+				alert('Hello');
+				// document.location.href = 'https://www.flipkart.com/';
+			});
+
+			$('#clickjs').on('click', function(event) {
+				// alert('sfsf');
+				document.location.href = 'https://www.flipkart.com/';
+			});
+
+			$('.myform').on('submit', function(event) {
+				event.preventDefault();
+
+				var fname = $('#fname').val();
+				alert(fname);
+			});
+		</script>
+
+	</body>
+</html>

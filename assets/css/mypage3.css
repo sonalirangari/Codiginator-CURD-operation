@@ -1,0 +1,37 @@
+.button-one {
+		border: 2px solid #06BE78; 
+		padding: 10px; 
+		margin: 10px; 
+		width: 100px; 
+		height: 50px; 
+		border-radius: 50px 50px 50px 50px; 
+		text-align: center; 
+		background-color: #ffffff;
+}
+
+.div-one {
+	float: right; 
+	width: auto;
+}
+
+/* Here,
+	1. .div-one is class name 
+	2. div is tag name
+ */
+.div-one div {
+	border: 3px solid #ff0000; 
+	padding: 10px; 
+	margin: 10px; 
+	width: 200px; 
+	height: 50px; 
+	border-radius: 60px;
+}
+
+#section-one {
+	border: 3px solid #ff0000; 
+	padding: 10px; 
+	margin: 10px; 
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50px 10px 50px 50px;
+}
